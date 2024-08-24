@@ -7,7 +7,7 @@ class ListUtils {
     companion object {
         fun getHomeOption(): ArrayList<HomeOptions> {
             val optionList: ArrayList<HomeOptions> = ArrayList()
-            optionList.add(HomeOptions(R.drawable.home_live, AppConstant.HOME))
+            optionList.add(HomeOptions(R.drawable.home_live, AppConstant.LIVE))
             optionList.add(HomeOptions(R.drawable.home_team, AppConstant.TEAM))
             optionList.add(HomeOptions(R.drawable.home_fixture, AppConstant.FIXTURE))
             optionList.add(HomeOptions(R.drawable.home_channel, AppConstant.CHANNEL))

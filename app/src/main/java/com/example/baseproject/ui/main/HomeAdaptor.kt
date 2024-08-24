@@ -4,17 +4,17 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.baseproject.data.HomeOptions
-import com.example.baseproject.databinding.ItemProductBinding
+import com.example.baseproject.databinding.ItemHomeBinding
 import com.example.baseproject.utils.load
 
 class HomeAdaptor : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var dataList: ArrayList<HomeOptions> = ArrayList()
     private var listener: HomeListener? = null
 
-    class HomeHolder(var binding: ItemProductBinding) : RecyclerView.ViewHolder(binding.root)
+    class HomeHolder(var binding: ItemHomeBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        val binding = ItemProductBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = ItemHomeBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return HomeHolder(binding)
     }
 

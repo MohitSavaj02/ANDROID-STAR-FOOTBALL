@@ -1,11 +1,15 @@
 package com.example.baseproject.ui.main
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
 import com.example.baseproject.base.BaseActivity
 import com.example.baseproject.data.HomeOptions
 import com.example.baseproject.databinding.ActivityMainBinding
+import com.example.baseproject.ui.live.LiveActivity
+import com.example.baseproject.ui.team.TeamActivity
+import com.example.baseproject.utils.AppConstant
 import com.example.baseproject.utils.ListUtils
 import com.example.baseproject.viewmodel.APIViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -44,6 +48,14 @@ class MainActivity : BaseActivity(), View.OnClickListener, HomeAdaptor.HomeListe
     }
 
     override fun onItemClick(item: HomeOptions) {
+        when (item.title) {
+            AppConstant.LIVE -> {
+                startActivity(Intent(this, LiveActivity::class.java))
+            }
 
+            AppConstant.TEAM -> {
+                startActivity(Intent(this, TeamActivity::class.java))
+            }
+        }
     }
 }

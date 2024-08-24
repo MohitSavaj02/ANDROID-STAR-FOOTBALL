@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="placeHolder">#DCDCDC</color>
     <color name="screenBg">#E1E1E1</color>
+    <color name="red">#AA0B2D</color>
 </resources>

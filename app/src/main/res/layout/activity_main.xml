@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/screenBg"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".ui.main.MainActivity">
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/txtTitle"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_50sdp"
         android:background="@drawable/top_bar"
@@ -17,21 +17,19 @@
         android:paddingBottom="@dimen/_8sdp"
         android:text="@string/app_name"
         android:textColor="@color/white"
-        android:textSize="@dimen/_12ssp"
+        android:textSize="@dimen/_14ssp"
         android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvOptions"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:layout_weight="1"
-        android:clipChildren="false"
-        android:clipToPadding="false"
         android:orientation="vertical"
         android:padding="@dimen/_5sdp"
-        android:paddingTop="@dimen/_50sdp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="2"
-        tools:listitem="@layout/item_product" />
+        tools:listitem="@layout/item_home" />
 
 </LinearLayout>

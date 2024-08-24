@@ -1,7 +1,8 @@
 package com.example.baseproject.reposotory
 
 import com.example.baseproject.api.AppApi
-import com.example.baseproject.data.ProductResponse
+import com.example.baseproject.data.FixturesResponse
+import com.example.baseproject.data.TeamResponse
 import com.example.baseproject.data.error.ValidationException
 import com.example.baseproject.data.resource.Resource
 import com.example.baseproject.data.resource.ResponseHandler
@@ -18,10 +19,22 @@ class APIRepository @Inject constructor(
     private val responseHandler: ResponseHandler,
     private val mPrefUtils: PrefUtils,
 ) {
-    suspend fun getProductList(): Flow<Resource<ProductResponse>> = flow {
+    suspend fun getFixturesData(league: Int): Flow<Resource<FixturesResponse>> = flow {
         emit(Resource.loading())
         try {
-            val response = responseHandler.handleResponse(api.getProductList())
+            val response = responseHandler.handleResponse(api.getFixturesData(league = league))
+            emit(response)
+        } catch (e: Exception) {
+            emit(responseHandler.handleException(e))
+        }
+    }.catch {
+        emit(responseHandler.handleException(ValidationException(it.message)))
+    }
+
+    suspend fun getTeamData(league: Int): Flow<Resource<TeamResponse>> = flow {
+        emit(Resource.loading())
+        try {
+            val response = responseHandler.handleResponse(api.getTeamData(league = league))
             emit(response)
         } catch (e: Exception) {
             emit(responseHandler.handleException(e))

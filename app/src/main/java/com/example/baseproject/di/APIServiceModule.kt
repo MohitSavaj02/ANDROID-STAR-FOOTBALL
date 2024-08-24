@@ -33,13 +33,10 @@ class APIServiceModule {
         interceptor.level = HttpLoggingInterceptor.Level.BODY
         httpClient.addInterceptor { chain ->
             val original = chain.request()
-            val token = prefsUtils.getAuthToken()
             val requestBuilder = original.newBuilder()
                 .addHeader("Content-Type", "application/json")
                 .addHeader("Cache-Control", "no-cache")
-            if (!token.isNullOrEmpty()) {
-                requestBuilder.addHeader("Authorization", "Bearer $token")
-            }
+            requestBuilder.addHeader("X-RapidAPI-Key", AppConstant.API_KEY)
             val request = requestBuilder.build()
             chain.proceed(request)
         }

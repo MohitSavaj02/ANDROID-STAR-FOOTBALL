@@ -12,4 +12,6 @@
     <string name="salary">Salary</string>
     <string name="age">Age</string>
     <string name="product_data">Product Data</string>
+    <string name="live_score">Live Score</string>
+    <string name="teams">Teams</string>
 </resources>
