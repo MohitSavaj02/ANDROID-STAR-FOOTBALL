@@ -7,7 +7,7 @@ import com.example.baseproject.R
 import com.example.baseproject.base.BaseActivity
 import com.example.baseproject.data.FixturesResponse
 import com.example.baseproject.data.resource.Status
-import com.example.baseproject.databinding.ActivityLiveBinding
+import com.example.baseproject.databinding.ActivityCommonBinding
 import com.example.baseproject.utils.asString
 import com.example.baseproject.viewmodel.APIViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -16,13 +16,13 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 @OptIn(ExperimentalCoroutinesApi::class)
 @AndroidEntryPoint
 class LiveActivity : BaseActivity(), View.OnClickListener, LiveAdaptor.LiveListener {
-    private lateinit var binding: ActivityLiveBinding
+    private lateinit var binding: ActivityCommonBinding
     private lateinit var adaptor: LiveAdaptor
     private val viewModel: APIViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLiveBinding.inflate(layoutInflater)
+        binding = ActivityCommonBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initViews()
         setClicks()
@@ -34,6 +34,7 @@ class LiveActivity : BaseActivity(), View.OnClickListener, LiveAdaptor.LiveListe
     }
 
     private fun initViews() {
+        binding.txtTitle.text = R.string.live_score.asString()
         adaptor = LiveAdaptor()
         adaptor.setListener(this)
         binding.rvData.adapter = adaptor

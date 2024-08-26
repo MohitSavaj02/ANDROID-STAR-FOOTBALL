@@ -7,7 +7,7 @@ import com.example.baseproject.R
 import com.example.baseproject.base.BaseActivity
 import com.example.baseproject.data.TeamResponse
 import com.example.baseproject.data.resource.Status
-import com.example.baseproject.databinding.ActivityTeamBinding
+import com.example.baseproject.databinding.ActivityCommonBinding
 import com.example.baseproject.utils.asString
 import com.example.baseproject.viewmodel.APIViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -16,13 +16,13 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 @OptIn(ExperimentalCoroutinesApi::class)
 @AndroidEntryPoint
 class TeamActivity : BaseActivity(), View.OnClickListener, TeamAdaptor.TeamListener {
-    private lateinit var binding: ActivityTeamBinding
+    private lateinit var binding: ActivityCommonBinding
     private lateinit var adaptor: TeamAdaptor
     private val viewModel: APIViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityTeamBinding.inflate(layoutInflater)
+        binding = ActivityCommonBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initViews()
         setClicks()
@@ -34,6 +34,7 @@ class TeamActivity : BaseActivity(), View.OnClickListener, TeamAdaptor.TeamListe
     }
 
     private fun initViews() {
+        binding.txtTitle.text = R.string.teams.asString()
         adaptor = TeamAdaptor()
         adaptor.setListener(this)
         binding.rvData.adapter = adaptor

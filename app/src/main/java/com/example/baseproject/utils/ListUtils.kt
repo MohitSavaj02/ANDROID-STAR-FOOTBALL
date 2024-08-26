@@ -1,7 +1,12 @@
 package com.example.baseproject.utils
 
 import com.example.baseproject.R
+import com.example.baseproject.app.StarFootballApp
 import com.example.baseproject.data.HomeOptions
+import com.example.baseproject.data.WinnerModel
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
+import java.io.InputStreamReader
 
 class ListUtils {
     companion object {
@@ -17,6 +22,14 @@ class ListUtils {
             optionList.add(HomeOptions(R.drawable.home_winner, AppConstant.WINNER))
             optionList.add(HomeOptions(R.drawable.home_result, AppConstant.RESULT))
             return optionList
+        }
+
+        fun getWinnerData(): ArrayList<WinnerModel> {
+            val list: ArrayList<WinnerModel> = ArrayList()
+            val inputStream = StarFootballApp.getAppInstance().assets.open("winners.json")
+            val listType = object : TypeToken<List<WinnerModel>>() {}.type
+            list.addAll(Gson().fromJson(InputStreamReader(inputStream), listType))
+            return list
         }
     }
 }

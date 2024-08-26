@@ -5,4 +5,7 @@
     <color name="placeHolder">#DCDCDC</color>
     <color name="screenBg">#E1E1E1</color>
     <color name="red">#AA0B2D</color>
+    <color name="black30">#4D000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#848484</color>
 </resources>

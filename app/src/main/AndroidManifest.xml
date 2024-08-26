@@ -5,13 +5,12 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <application
-        android:name=".app.MyApp"
+        android:name=".app.StarFootballApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/app_logo_200"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BaseProject"
         tools:targetApi="31">
@@ -34,6 +33,22 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.team.TeamActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.prediction.PredictionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.result.ResultActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.schedule.ScheduleActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.winner.WinnerActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
     </application>

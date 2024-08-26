@@ -7,7 +7,7 @@ import android.view.View
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.example.baseproject.R
-import com.example.baseproject.app.MyApp
+import com.example.baseproject.app.StarFootballApp
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -19,7 +19,7 @@ fun after(milliSeconds: Long, action: () -> Unit) {
 
 fun Int.asString(context: Context? = null): String {
     if (context != null) return context.getString(this)
-    return MyApp.getAppInstance().getString(this)
+    return StarFootballApp.getAppInstance().getString(this)
 }
 
 fun View.enable() {
@@ -34,12 +34,12 @@ fun ImageView.load(data: Any?) {
     if (data is Int) {
         this.setImageResource(data)
     } else {
-        Glide.with(MyApp.getAppInstance()).load(data).placeholder(R.color.placeHolder).into(this)
+        Glide.with(StarFootballApp.getAppInstance()).load(data).placeholder(R.color.placeHolder).into(this)
     }
 }
 
 fun Int.asColor(): Int {
-    return MyApp.getAppInstance().getColor(this)
+    return StarFootballApp.getAppInstance().getColor(this)
 }
 
 fun String.formatDate(outputPattern: String = "dd MMM yy"): String {
