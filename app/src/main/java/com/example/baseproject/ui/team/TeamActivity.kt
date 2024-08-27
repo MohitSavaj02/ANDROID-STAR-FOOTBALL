@@ -1,5 +1,6 @@
 package com.example.baseproject.ui.team
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
@@ -8,6 +9,7 @@ import com.example.baseproject.base.BaseActivity
 import com.example.baseproject.data.TeamResponse
 import com.example.baseproject.data.resource.Status
 import com.example.baseproject.databinding.ActivityCommonBinding
+import com.example.baseproject.utils.AppConstant
 import com.example.baseproject.utils.asString
 import com.example.baseproject.viewmodel.APIViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -76,6 +78,10 @@ class TeamActivity : BaseActivity(), View.OnClickListener, TeamAdaptor.TeamListe
     }
 
     override fun onItemClick(item: TeamResponse.Response) {
-
+        startActivity(
+            Intent(this, TeamDetailActivity::class.java)
+                .putExtra(AppConstant.TEAM_ID, item.team?.id)
+                .putExtra(AppConstant.TEAM_NAME, item.team?.name)
+        )
     }
 }

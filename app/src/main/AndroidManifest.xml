@@ -51,6 +51,10 @@
             android:name=".ui.winner.WinnerActivity"
             android:exported="true"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.team.TeamDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

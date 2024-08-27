@@ -54,6 +54,8 @@ dependencies {
     annotationProcessor(libs.compiler)
     implementation(libs.gson)
 
+    implementation(libs.androidx.navigation.fragment.ktx)
+
     //lifecycle-aware components
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)

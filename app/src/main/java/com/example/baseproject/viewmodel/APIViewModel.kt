@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.baseproject.data.FixturesResponse
 import com.example.baseproject.data.PredictionResponse
+import com.example.baseproject.data.SquadResponse
 import com.example.baseproject.data.TeamResponse
 import com.example.baseproject.data.resource.Resource
 import com.example.baseproject.reposotory.APIRepository
@@ -44,6 +45,15 @@ class APIViewModel @Inject constructor(
         viewModelScope.launch {
             repository.getPredictionScore(fixtureID).onEach { state ->
                 getPredictionResponse.value = state
+            }.launchIn(viewModelScope)
+        }
+    }
+
+    val getSquadDataResponse: MutableLiveData<Resource<SquadResponse>> = MutableLiveData()
+    fun getSquadData(teamID: Int) {
+        viewModelScope.launch {
+            repository.getSquadData(teamID).onEach { state ->
+                getSquadDataResponse.value = state
             }.launchIn(viewModelScope)
         }
     }

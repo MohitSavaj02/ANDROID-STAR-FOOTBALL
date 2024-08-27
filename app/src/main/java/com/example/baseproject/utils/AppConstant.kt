@@ -18,4 +18,6 @@ object AppConstant {
     const val STANDINGS = "Standings"
     const val WINNER = "winner"
     const val RESULT = "result"
+    const val TEAM_ID = "teamId"
+    const val TEAM_NAME = "teamName"
 }
