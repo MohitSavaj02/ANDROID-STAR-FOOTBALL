@@ -26,4 +26,16 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="matches">Matches</string>
     <string name="squad">Squad</string>
+    <string name="standings">Standings</string>
+    <string name="club">CLUB</string>
+    <string name="mp">MP</string>
+    <string name="w">W</string>
+    <string name="d">D</string>
+    <string name="l">L</string>
+    <string name="pts">Pts</string>
+    <string name="gf">GF</string>
+    <string name="ga">GA</string>
+    <string name="gd">GD</string>
+    <string name="last_5">Last 5</string>
+    <string name="channel">Channel</string>
 </resources>

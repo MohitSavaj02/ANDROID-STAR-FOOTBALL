@@ -8,10 +8,12 @@ import com.example.baseproject.R
 import com.example.baseproject.base.BaseActivity
 import com.example.baseproject.data.HomeOptions
 import com.example.baseproject.databinding.ActivityCommonBinding
+import com.example.baseproject.ui.channel.ChannelActivity
 import com.example.baseproject.ui.live.LiveActivity
 import com.example.baseproject.ui.prediction.PredictionActivity
 import com.example.baseproject.ui.result.ResultActivity
 import com.example.baseproject.ui.schedule.ScheduleActivity
+import com.example.baseproject.ui.standing.StandingActivity
 import com.example.baseproject.ui.team.TeamActivity
 import com.example.baseproject.ui.winner.WinnerActivity
 import com.example.baseproject.utils.AppConstant
@@ -68,6 +70,14 @@ class MainActivity : BaseActivity(), HomeAdaptor.HomeListener {
 
             AppConstant.WINNER -> {
                 startActivity(Intent(this, WinnerActivity::class.java))
+            }
+
+            AppConstant.STANDINGS -> {
+                startActivity(Intent(this, StandingActivity::class.java))
+            }
+
+            AppConstant.CHANNEL -> {
+                startActivity(Intent(this, ChannelActivity::class.java))
             }
         }
     }

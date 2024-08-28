@@ -1,0 +1,314 @@
+{
+  "data": [
+    {
+      "country": "Brazil",
+      "logo": "Brazil.png",
+      "channel": "Band"
+    },
+    {
+      "country": "Tanzania",
+      "logo": "Tanzania.png",
+      "channel": "TBC,Azam TV"
+    },
+    {
+      "country": "Belgium",
+      "logo": "Belgium.png",
+      "channel": "RTBF"
+    },
+    {
+      "country": "Democratic Republic of Congo",
+      "logo": "Democratic.png",
+      "channel": "RTNC"
+    },
+    {
+      "country": "Gambia",
+      "logo": "Gambia.png",
+      "channel": "GRTS"
+    },
+    {
+      "country": "Germany",
+      "logo": "Germany.png",
+      "channel": "Sport digital"
+    },
+    {
+      "country": "Namibia",
+      "logo": "Namibia.png",
+      "channel": "NBC"
+    },
+    {
+      "country": "United States",
+      "logo": "United States.png",
+      "channel": "beIN Sports"
+    },
+    {
+      "country": "France",
+      "logo": "France.png",
+      "channel": "bein SPORTS"
+    },
+    {
+      "country": "Nigeria",
+      "logo": "gambia.png",
+      "channel": "NTA"
+    },
+    {
+      "country": "Ivory Coast",
+      "logo": "Ivory Coast.png",
+      "channel": "RTI,NCI"
+    },
+    {
+      "country": "Austria",
+      "logo": "Germany.png",
+      "channel": "Sportdigital"
+    },
+    {
+      "country": "Canada",
+      "logo": "France.png",
+      "channel": "bein SPORTS"
+    },
+    {
+      "country": "Benin",
+      "logo": "Benin.png",
+      "channel": "ORTB"
+    },
+    {
+      "country": "India",
+      "logo": "India.png",
+      "channel": "FanCode"
+    },
+    {
+      "country": "Cape Verde",
+      "logo": "Cape Verde.png",
+      "channel": "RTC"
+    },
+    {
+      "country": "Andorra",
+      "logo": "Andorra.png",
+      "channel": "LaLiga+"
+    },
+    {
+      "country": "Netherlands",
+      "logo": "Netherlands.png",
+      "channel": "Ziggo Sport"
+    },
+    {
+      "country": "Sub-Saharan Africa",
+      "logo": "Sub-Saharan Africa.png",
+      "channel": "New World TV, Canal+"
+    },
+    {
+      "country": "Turkey",
+      "logo": "Turkey.png",
+      "channel": "TV8, S Sport"
+    },
+    {
+      "country": "Russia",
+      "logo": "Russia.png",
+      "channel": "Okko Sport"
+    },
+    {
+      "country": "North Macedonia",
+      "logo": "North Macedonia.png",
+      "channel": "Sport Klub"
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "logo": "North Macedonia.png",
+      "channel": "Sport Klub"
+    },
+    {
+      "country": "United Kingdom",
+      "logo": "United Kingdom.png",
+      "channel": "BBC, Sky Sports"
+    },
+    {
+      "country": "Iceland",
+      "logo": "Iceland.png",
+      "channel": "Viaplay"
+    },
+    {
+      "country": "Denmark",
+      "logo": "Denmark.png",
+      "channel": "Viaplay"
+    },
+    {
+      "country": "Luxembourg",
+      "logo": "Luxembourg.png",
+      "channel": "sportdigital"
+    },
+    {
+      "country": "Algeria",
+      "logo": "Algeria.png",
+      "channel": "ENTV"
+    },
+    {
+      "country": "Gambia",
+      "logo": "Gambia.png",
+      "channel": "GRTS"
+    },
+    {
+      "country": "Croatia",
+      "logo": "Croatia.png",
+      "channel": "Sport Klub"
+    },
+    {
+      "country": "Guinea",
+      "logo": "gambia.png",
+      "channel": "RTG"
+    },
+    {
+      "country": "Denmark",
+      "logo": "Iceland.png",
+      "channel": "Viaplay"
+    },
+    {
+      "country": "Cameroon",
+      "logo": "Cameroon.png",
+      "channel": "CRTV"
+    },
+    {
+      "country": "Italy",
+      "logo": "Italy.png",
+      "channel": "Sportitalia"
+    },
+    {
+      "country": "Andorra",
+      "logo": "Andorra.png",
+      "channel": "LaLiga+"
+    },
+    {
+      "country": "Finland",
+      "logo": "Iceland.png",
+      "channel": "Viaplay"
+    },
+    {
+      "country": "France",
+      "logo": "France.png",
+      "channel": "beIN Sports"
+    },
+    {
+      "country": "Zambia",
+      "logo": "Zambia.png",
+      "channel": "ZNBC, Diamond TV"
+    },
+    {
+      "country": "Montenegro",
+      "logo": "Croatia.png",
+      "channel": "Sport Klub"
+    },
+    {
+      "country": "Austria",
+      "logo": "Germany.png",
+      "channel": "sportdigital"
+    },
+    {
+      "country": "Norway",
+      "logo": "Iceland.png",
+      "channel": "viaplay"
+    },
+    {
+      "country": "Mozambique",
+      "logo": "Mozambique.png",
+      "channel": "TVM, TV Miramar"
+    },
+    {
+      "country": "Slovenia",
+      "logo": "Croatia.png",
+      "channel": "Sport Klub"
+    },
+    {
+      "country": "Liechtenstein",
+      "logo": "Germany.png",
+      "channel": "Sportdigital"
+    },
+    {
+      "country": "Spain",
+      "logo": "Andorra.png",
+      "channel": "LALIGA+"
+    },
+    {
+      "country": "Ukraine",
+      "logo": "Ukraine.png",
+      "channel": "MEGOGO"
+    },
+    {
+      "country": "Congo",
+      "logo": "Democratic.png",
+      "channel": "RTNC"
+    },
+    {
+      "country": "Poland",
+      "logo": "Ukraine.png",
+      "channel": "MEGOGO"
+    },
+    {
+      "country": "Belgium",
+      "logo": "Belgium.png",
+      "channel": "RTBF"
+    },
+    {
+      "country": "Serbia",
+      "logo": "Croatia.png",
+      "channel": "Sport Klub"
+    },
+    {
+      "country": "Ireland",
+      "logo": "Ireland.png",
+      "channel": "Sky Sports"
+    },
+    {
+      "country": "Guinea",
+      "logo": "Gambia.png",
+      "channel": "RTG"
+    },
+    {
+      "country": "Bulgaria",
+      "logo": "Bulgaria.png",
+      "channel": "Max Sport"
+    },
+    {
+      "country": "Mali",
+      "logo": "Mali.png",
+      "channel": "ORTM"
+    },
+    {
+      "country": "Sweden",
+      "logo": "Iceland.png",
+      "channel": "viaplay"
+    },
+    {
+      "country": "Portugal",
+      "logo": "Portugal.png",
+      "channel": "sport tv"
+    },
+    {
+      "country": "Zimbabwe",
+      "logo": "Zimbabwe.png",
+      "channel": "ZBC"
+    },
+    {
+      "country": "Gabon",
+      "logo": "Gabon.png",
+      "channel": "Gabon TV"
+    },
+    {
+      "country": "Middle East and North Africa",
+      "logo": "France.png",
+      "channel": "beIN Sports"
+    },
+    {
+      "country": "Morocco",
+      "logo": "Morocco.png",
+      "channel": "SNRT"
+    },
+    {
+      "country": "Croatia",
+      "logo": "Croatia.png",
+      "channel": "Sport Klub"
+    },
+    {
+      "country": "San Marino",
+      "logo": "Italy.png",
+      "channel": "sportitalia"
+    }
+  ]
+}

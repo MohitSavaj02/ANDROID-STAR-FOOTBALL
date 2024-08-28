@@ -2,6 +2,7 @@ package com.example.baseproject.utils
 
 import com.example.baseproject.R
 import com.example.baseproject.app.StarFootballApp
+import com.example.baseproject.data.ChannelModel
 import com.example.baseproject.data.HomeOptions
 import com.example.baseproject.data.WinnerModel
 import com.google.gson.Gson
@@ -29,6 +30,14 @@ class ListUtils {
             val inputStream = StarFootballApp.getAppInstance().assets.open("winners.json")
             val listType = object : TypeToken<List<WinnerModel>>() {}.type
             list.addAll(Gson().fromJson(InputStreamReader(inputStream), listType))
+            return list
+        }
+
+        fun getChannelData(): ArrayList<ChannelModel.Data> {
+            val list: ArrayList<ChannelModel.Data> = ArrayList()
+            val inputStream = StarFootballApp.getAppInstance().assets.open("channels_data.json")
+            val data = Gson().fromJson(InputStreamReader(inputStream), ChannelModel::class.java)
+            list.addAll(data.data?.filterNotNull() ?: ArrayList())
             return list
         }
     }

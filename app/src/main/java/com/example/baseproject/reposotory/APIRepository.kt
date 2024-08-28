@@ -4,6 +4,7 @@ import com.example.baseproject.api.AppApi
 import com.example.baseproject.data.FixturesResponse
 import com.example.baseproject.data.PredictionResponse
 import com.example.baseproject.data.SquadResponse
+import com.example.baseproject.data.StandingResponse
 import com.example.baseproject.data.TeamResponse
 import com.example.baseproject.data.error.ValidationException
 import com.example.baseproject.data.resource.Resource
@@ -37,6 +38,18 @@ class APIRepository @Inject constructor(
         emit(Resource.loading())
         try {
             val response = responseHandler.handleResponse(api.getTeamData(league = league))
+            emit(response)
+        } catch (e: Exception) {
+            emit(responseHandler.handleException(e))
+        }
+    }.catch {
+        emit(responseHandler.handleException(ValidationException(it.message)))
+    }
+
+    suspend fun getStandingData(league: Int): Flow<Resource<StandingResponse>> = flow {
+        emit(Resource.loading())
+        try {
+            val response = responseHandler.handleResponse(api.getStandingData(league = league))
             emit(response)
         } catch (e: Exception) {
             emit(responseHandler.handleException(e))

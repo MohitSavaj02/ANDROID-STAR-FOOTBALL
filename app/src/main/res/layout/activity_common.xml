@@ -47,7 +47,7 @@
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             app:spanCount="1"
-            tools:listitem="@layout/item_live" />
+            tools:listitem="@layout/item_standing" />
 
         <ProgressBar
             android:layout_width="@dimen/_25sdp"
