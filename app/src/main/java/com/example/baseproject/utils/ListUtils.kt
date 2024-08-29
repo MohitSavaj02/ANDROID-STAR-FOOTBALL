@@ -17,7 +17,7 @@ class ListUtils {
             optionList.add(HomeOptions(R.drawable.home_team, AppConstant.TEAM))
             optionList.add(HomeOptions(R.drawable.home_fixture, AppConstant.FIXTURE))
             optionList.add(HomeOptions(R.drawable.home_channel, AppConstant.CHANNEL))
-            optionList.add(HomeOptions(R.drawable.home_news, AppConstant.NEWS))
+//            optionList.add(HomeOptions(R.drawable.home_news, AppConstant.NEWS))
             optionList.add(HomeOptions(R.drawable.home_standings, AppConstant.STANDINGS))
             optionList.add(HomeOptions(R.drawable.home_prediction, AppConstant.PREDICTION))
             optionList.add(HomeOptions(R.drawable.home_winner, AppConstant.WINNER))
